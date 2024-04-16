@@ -11,14 +11,16 @@ async function Images() {
   return (
     <div className="flex flex-wrap justify-center gap-4">
       {images.map((image) => (
-        <div key={image.id} className="flex max-h-48 w-48 flex-col gap-max-2">
-          <Image
-            src={image.url}
-            style={{ objectFit: "contain" }}
-            width={192}
-            height={192}
-            alt="Image name"
-          />
+        <div key={image.id} className="gap-max-2 flex max-h-48 w-48 flex-col">
+          <Link href={`/img/${image.id}`}>
+            <Image
+              src={image.url}
+              style={{ objectFit: "contain" }}
+              width={192}
+              height={192}
+              alt="Image name"
+            />
+          </Link>
           <div>{image.name}</div>
         </div>
       ))}
