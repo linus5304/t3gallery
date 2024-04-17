@@ -13,6 +13,12 @@
 - [x] Error management (w/ sentry)
 - [x] Routing/image page (parallel route)
 - [x] Upload button to be less cringe
-- [ ] Analytics (posthog)
-- [ ] Delete button (w/ server actions)
-- [ ] Ratelimiting (upstash)
+- [x] Analytics (posthog)
+- [x] Delete button (w/ server actions)
+- [x] Ratelimiting (upstash)
+
+## Challenge
+- Fix the page layout for images of different resolutions
+- "Selecting " images on the gallery page
+- "Infinite scroll"
+- Folders/albums
